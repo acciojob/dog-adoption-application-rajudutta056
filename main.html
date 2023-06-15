@@ -2,38 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Adoption Application</title>
 </head>
 <body>
-    
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Name">
-             <br>
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" placeholder="Phone Number">
-            <br>
-            <label for="address">Address</label>
-            <input type="text" id="address" placeholder="Address">
-            <br>
-            <label for="checkbox">Have you ever lived with a Dog before?</label>
-            <input type="checkbox" id="checkbox" placeholder="Phone Number" value="Have you ever lived with a Dog before?">
-            <br>
-             <label for="breeds">Please select your preferred breeds</label>
-            <select value="breeds" id="multiSelect" multiple>
-                <option value="begal">Begal</option>
-                <option value="hasky">Hasky</option>
-                <option value="lasa">Lasa</option>
-                <br><br>
-                <br>
-                <input type="submit" value="Submit" id="submit">
-            </select>
+    <form method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" required placeholder="Name">
+        <br>
 
+        <label for="phone"> Phone Number</label>
+        <input type="text" id="phone" required placeholder="Phone Number">
+        <br>
 
-        </form>
+        <label for="address"> Address </label>
+        <input type="text" id="address" required placeholder="Address">
+        <br>
+         
+        <label for="checkbox">Have you ever lived with a Dog before? </label>
+        <input type="checkbox" required id="checkbox" value="Have you ever lived with a Dog before? ">
+        <br>
 
-    
+        <label for="multiSelect">Please select your preferred breeds</label>
+        <select id="multiSelect" required multiple>
+            
+            <option value="begal">begal</option>
+            <option value="husky">husky</option>
+            <option value="pom">pom</option>
+
+        </select>
+        <button type="submit"> Submit </button>
+
+    </form>
 </body>
 </html>
